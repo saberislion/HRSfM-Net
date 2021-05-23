@@ -9,9 +9,9 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 flags = tf.app.flags
-flags.DEFINE_string("dataset_dir", "/home/pu/kitti_data/data/", "Dataset directory")
-flags.DEFINE_string("checkpoint_dir", "./base/", "Directory name to save the checkpoints")
-flags.DEFINE_string("init_checkpoint_file",  "./checkpoints6/model-50220", "Specific checkpoint file to initialize from")
+flags.DEFINE_string("dataset_dir", "", "Dataset directory")
+flags.DEFINE_string("checkpoint_dir", "", "Directory name to save the checkpoints")
+flags.DEFINE_string("init_checkpoint_file",  "", "Specific checkpoint file to initialize from")
 flags.DEFINE_float("start_learning_rate", 0.0001, "Learning rate of for adam")
 flags.DEFINE_float("beta1", 0.9, "Momentum term of adam")
 flags.DEFINE_float("smooth_weight", 0.0, "Weight for smoothness")
