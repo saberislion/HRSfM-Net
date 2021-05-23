@@ -9,7 +9,6 @@ import tensorflow.contrib.slim as slim
 from data_loader import DataLoader
 from utils import *
 from nets import *
-from nets_mono2 import *
 
 from Model import HighResolutionNet
 from sklearn.metrics import accuracy_score
